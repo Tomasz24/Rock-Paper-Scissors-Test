@@ -1,5 +1,108 @@
 
-* {
+/* * {
     border: black 1px solid;
+    font-family: arial;
+} */
+
+img {
+    height: 250px;
+    border-radius: 20px;
+    background-color:white;
+    padding: 25px;
 }
 
+.btn {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 150px;
+    background-color: rgb(107, 230, 255);
+    font-size: 20px;
+    border-radius: 20px;
+    transition: background 0.5s;
+    background-position: center;
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    /* background-color: rgb(157, 255, 255); */
+    background-image: radial-gradient(circle, transparent 1%, rgb(41, 255, 180) 1%);
+    background-position: center;
+    /* background-size: 150%; */
+    background-size: 15000%;
+
+    /* transition-duration: 0.4s; */
+}
+
+.btn:active {
+    /* background-color: rgb(55, 175, 255); */
+    background-color: rgb(41, 255, 180);
+    transition: background 0s;
+    background-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header,
+.footer {
+    height: 80px;
+    flex: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+    /* background-color: gainsboro; */
+    background-color: rgb(107, 230, 255);
+
+}
+
+.footer {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.score {
+    /* height: 100px;
+    width: 300px; */
+    padding: 25px;
+    margin: 20px;
+    background-color:rgb(107, 230, 255);
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.content {
+    /* height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: red 2px solid; */
+    gap: 30px;
+}
+
+.choice-images {
+    display: flex;
+    gap: 40px;
+    background-color: rgb(107, 230, 255);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.choice {
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+}

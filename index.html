@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-  <body>
-      <script src="rps.js"></script>
-      <div class="header">
-        Hello
-      </div>
+    <body>
+        <script src="rps.js"></script>
+        <div class="header">
+            Rock Paper Scissors
+        </div>
 
-      <div class="content">
-        <div class="score">
-            <div class="user">
-                <span class="user-text">User: </span>
-                <span class="user-score"> 0</span>
+        <div class="content">
+            
+            <div class="score">
+                <div class="user">
+                    <span class="user-text">User: </span>
+                    <span id="user-score"> 0</span>
+                </div>
+                <div class="computer">
+                    <span class="computer-text">Computer: </span>
+                    <span id="computer-score"> 0</span>
+                </div>
             </div>
-            <div class="computer">
-                <span class="computer-text">Computer: </span>
-                <span class="computer-score"> 0</span>
+
+            <div class="choice-images">
+                <img id="user-choice" src="questionMark.png" alt="user-choice">
+                <img id="computer-choice" src="questionMark.png" alt="computer-choice">
+            </div>
+
+            <div class="choice">
+                <button type="button" class="btn" onclick="turn('rock')">Rock</button>
+                <button type="button" class="btn" onclick="turn('paper')">Paper</button>
+                <button type="button" class="btn" onclick="turn('scissors')">Scissors</button>
             </div>
         </div>
 
-        <div class="choice-images">
-            <img id="user-choice" src="" alt="user-choice">
-            <img id="computer-choice" sre="" alt="computer-choice">
+        <div class="footer">
+            Have fun!
         </div>
-
-        <div class="choice">
-            <button type="button" onclick="rock">Rock</button>
-            <button type="button" onclick="paper">Paper</button>
-            <button type="button" onclick="scissors">Scissors</button>
-        </div>
-      </div>
-
-      <div class="footer">
-        Bye
-      </div>
-
-  </body>
+    
+    </body>
 </html>
